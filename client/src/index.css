@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(217, 19%, 25%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(215, 13%, 47%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(217, 19%, 25%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(217, 19%, 25%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(22, 96%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(22, 96%, 54%);
+  --radius: 0.5rem;
+  --swiggy-orange: hsl(22, 96%, 54%);
+  --swiggy-dark: hsl(217, 19%, 25%);
+  --swiggy-gray: hsl(215, 13%, 47%);
+  --swiggy-light: hsl(0, 0%, 97%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(22, 96%, 54%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+  --swiggy-orange: hsl(22, 96%, 54%);
+  --swiggy-dark: hsl(217, 19%, 25%);
+  --swiggy-gray: hsl(215, 13%, 47%);
+  --swiggy-light: hsl(0, 0%, 97%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .bg-swiggy-orange {
+    background-color: hsl(var(--swiggy-orange));
+  }
+  
+  .text-swiggy-orange {
+    color: hsl(var(--swiggy-orange));
+  }
+  
+  .bg-swiggy-dark {
+    background-color: hsl(var(--swiggy-dark));
+  }
+  
+  .text-swiggy-dark {
+    color: hsl(var(--swiggy-dark));
+  }
+  
+  .text-swiggy-gray {
+    color: hsl(var(--swiggy-gray));
+  }
+  
+  .bg-swiggy-light {
+    background-color: hsl(var(--swiggy-light));
+  }
+  
+  .border-swiggy-orange {
+    border-color: hsl(var(--swiggy-orange));
+  }
+  
+  .hover\:bg-swiggy-orange:hover {
+    background-color: hsl(var(--swiggy-orange));
+  }
+  
+  .hover\:text-swiggy-orange:hover {
+    color: hsl(var(--swiggy-orange));
+  }
+  
+  .focus\:ring-swiggy-orange:focus {
+    --tw-ring-color: hsl(var(--swiggy-orange));
+  }
+}
