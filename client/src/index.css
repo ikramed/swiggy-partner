@@ -27,6 +27,7 @@
   --swiggy-dark: hsl(217, 19%, 25%);
   --swiggy-gray: hsl(215, 13%, 47%);
   --swiggy-light: hsl(0, 0%, 97%);
+  --swiggy-orange-hover: hsl(22, 96%, 50%);
 }
 
 .dark {
@@ -109,5 +110,39 @@
   
   .focus\:ring-swiggy-orange:focus {
     --tw-ring-color: hsl(var(--swiggy-orange));
+  }
+
+  .hover\:bg-swiggy-orange-hover:hover {
+    background-color: hsl(var(--swiggy-orange-hover));
+  }
+
+  /* Custom animation for text rotation */
+  .text-animation {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Custom shadow for cards */
+  .card-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .card-shadow-hover:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Progress bar indicator animation */
+  .progress-indicator {
+    transition: all 0.3s ease-in-out;
   }
 }

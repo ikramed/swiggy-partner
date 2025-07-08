@@ -114,10 +114,17 @@ This is a full-stack web application built for Swiggy's partner onboarding syste
 ```
 Changelog:
 - July 08, 2025. Initial setup
+- July 08, 2025. Created pixel-perfect Swiggy Partner login page replica with:
+  - Rotating text animation with 3-part progress indicator
+  - Side-by-side card layout for steps and documents
+  - Enhanced hover effects and micro-interactions
+  - Authentic Swiggy background image integration
+  - Smooth transitions and scaling animations
 ```
 
 ## User Preferences
 
 ```
 Preferred communication style: Simple, everyday language.
+Project focus: Frontend-only Swiggy Partner login page replica with exact design matching, animations, and interactive elements.
 ```
